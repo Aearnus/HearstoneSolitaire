@@ -16,7 +16,6 @@
 
 		</style>
 	<style type="text/css"></style>
-	<audio id="getinhere" src="everyonegetinhere.mp3"></audio>
 	</head>
 	<body>
 
@@ -46,6 +45,9 @@
 			var cheight = 100, cheighthalf = cheight / 2;
 
 			var particles = [];
+
+			var getinhere = new Audio();
+			getInhere.src = "everyonegetinhere.mp3";
 
 			var Particle = function ( id, x, y, sx, sy ) {
 
@@ -90,7 +92,7 @@
 			image.src = "grimpatrons.png";
 
 			var throwCard = function ( x, y ) {
-				document.getElementById("getinhere").play();
+				getInHere.play();
 				
 				id > 0 ? id -- : id = 49;
 
