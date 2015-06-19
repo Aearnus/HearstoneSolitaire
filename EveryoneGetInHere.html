@@ -28,7 +28,7 @@
 			info.style.width = '100%';
 			info.style.fontFamily = 'Monospace';
 			info.style.textAlign = 'center';
-			info.innerHTML = 'click and win! (ear destruction warning)';
+			info.innerHTML = 'click and win!';
 			document.body.appendChild( info );
 
 			var canvas = document.createElement( 'canvas' );
@@ -92,7 +92,7 @@
 			image.src = "grimpatrons.png";
 
 			var throwCard = function ( x, y ) {
-				if(++audioIndex < 500) {
+				if(++audioIndex < 1000) {
 					getinhere = new Audio();
 					getinhere.src = "everyonegetinhere.mp3";
 					audio.push(getinhere);
