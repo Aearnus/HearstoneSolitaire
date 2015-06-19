@@ -15,7 +15,9 @@
 			}
 
 		</style>
-	<style type="text/css"></style></head>
+	<style type="text/css"></style>
+	<audio id="getinhere" src="everyonegetinhere.mp3"></audio>
+	</head>
 	<body>
 
 
@@ -88,7 +90,8 @@
 			image.src = "grimpatrons.png";
 
 			var throwCard = function ( x, y ) {
-
+				document.getElementById("getinhere").play();
+				
 				id > 0 ? id -- : id = 49;
 
 				var particle = new Particle( id, x, y, Math.floor( Math.random() * 6 - 3 ) * 2, - Math.random() * 16 );
