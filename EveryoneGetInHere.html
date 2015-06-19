@@ -92,7 +92,8 @@
 			image.src = "grimpatrons.png";
 
 			var throwCard = function ( x, y ) {
-				if(++audioIndex < 1000) {
+				if(++audioIndex >= 100) {
+					audioIndex = 0;
 					getinhere = new Audio();
 					getinhere.src = "everyonegetinhere.mp3";
 					audio.push(getinhere);
