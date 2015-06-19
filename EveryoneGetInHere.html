@@ -47,9 +47,6 @@
 			var particles = [];
 
 			var audio = [];
-			
-			var getinhere = new Audio();
-			getinhere.src = "everyonegetinhere.mp3";
 
 			var Particle = function ( id, x, y, sx, sy ) {
 
@@ -94,6 +91,8 @@
 			image.src = "grimpatrons.png";
 
 			var throwCard = function ( x, y ) {
+				getinhere = new Audio();
+				getinhere.src = "everyonegetinhere.mp3";
 				audio.push(getinhere);
 				
 				id > 0 ? id -- : id = 49;
