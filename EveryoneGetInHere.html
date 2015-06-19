@@ -91,10 +91,11 @@
 			image.src = "grimpatrons.png";
 
 			var throwCard = function ( x, y ) {
-				getinhere = new Audio();
-				getinhere.src = "everyonegetinhere.mp3";
-				audio.push(getinhere);
-				
+				if(Math.random() < 0.1) {
+					getinhere = new Audio();
+					getinhere.src = "everyonegetinhere.mp3";
+					audio.push(getinhere);
+				}
 				id > 0 ? id -- : id = 49;
 
 				var particle = new Particle( id, x, y, Math.floor( Math.random() * 6 - 3 ) * 2, - Math.random() * 16 );
