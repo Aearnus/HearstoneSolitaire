@@ -47,6 +47,7 @@
 			var particles = [];
 
 			var audio = [];
+			var audioIndex = 0;
 
 			var Particle = function ( id, x, y, sx, sy ) {
 
@@ -91,7 +92,7 @@
 			image.src = "grimpatrons.png";
 
 			var throwCard = function ( x, y ) {
-				if(Math.random() < 0.02) {
+				if(++audioIndex < 500) {
 					getinhere = new Audio();
 					getinhere.src = "everyonegetinhere.mp3";
 					audio.push(getinhere);
